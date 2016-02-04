@@ -40,10 +40,13 @@ public int[] randomIntegers = {1,2,34,34,25,1,45,3,26,85,4,34,86,25,43,2,1,10000
 	/**
 	 * <b>Advantages</b>
 	 * </br>Simple approach using HashSet.
-	 * </br>More efficient in terms of performance.
+	 * </br>Most efficient in terms of performance.
 	 * </p>
 	 * <b>Disadvantages</b>
 	 * <br>Does not provide any ordering.
+	 * </p>
+	 * <b>Improvement</b>
+	 * <br>LinkedHashSet can be used to provide ordering with a minor compromise to the performance.
 	 * </p>
 	 * 
 	 * @param randomIntegers array of random integers with duplicates
@@ -70,7 +73,9 @@ public int[] randomIntegers = {1,2,34,34,25,1,45,3,26,85,4,34,86,25,43,2,1,10000
 	 * <b>Disadvantages</b>
 	 * <br>Adds little performance overhead when compared to HashSet.
 	 * </p>
-	 * 
+	 * <b>Improvement</b>
+	 * <br>This approach using LinkedHashSet is ideal to retain the original order.
+	 * </p>
 	 * @param randomIntegers array of random integers with duplicates
 	 * @return random integers with no duplicates
 	 */
@@ -95,6 +100,9 @@ public int[] randomIntegers = {1,2,34,34,25,1,45,3,26,85,4,34,86,25,43,2,1,10000
 	 * </p>
 	 * <b>Disadvantages</b>
 	 * <br>Programming overhead of copying the unique elements from the sorted array.
+	 * </p>
+	 * <b>Improvement</b>
+	 * <br>Java collection data structures can be used to avoid programming overhead.
 	 * </p>
 	 * 
 	 * @param randomIntegers array of random integers with duplicates
